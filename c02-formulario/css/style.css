@@ -4,10 +4,23 @@ body {
 
 li {
   list-style: none;
-  float: left;
+  float: right;
   padding: 5px;
 }
 
 a {
   text-decoration: none;
+}
+
+.navbar a {
+  color: black;
+} 
+
+#edad {
+  display: block;
+
+}
+
+h2 {
+  display: inline;
 }
