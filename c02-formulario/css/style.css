@@ -1,5 +1,9 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 body {
-  background-color: rgb(197, 233, 233);
+  background-color: beige;
 }
 
 li {
@@ -14,13 +18,47 @@ a {
 
 .navbar a {
   color: black;
-} 
+}
 
 #edad {
   display: block;
-
 }
 
 h2 {
   display: inline;
+}
+
+.botones {
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  background-color: rgb(179, 179, 155);
+  width: 150px;
+  border-radius: 15px;
+  border: 1px;
+}
+
+input {
+  background-color: rgb(179, 179, 155);
+  width: 200px;
+  margin-top: 15px;
+}
+
+select {
+  background-color: rgb(179, 179, 155);
+  width: 250px;
+  height: 25px;
+}
+
+main {
+  text-align: center;
+}
+
+.roboto {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }

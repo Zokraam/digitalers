@@ -1,58 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;1,100&display=swap"
+      rel="stylesheet"
+    />
     <title>Formulario</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
       <nav class="navbar">
         <ul>
-            <li>
-                <a href="">INICIO</a>
-            </li>
-            <li>
-                <a href="">INICIO</a>
-            </li>
-            <li>
-                <a href="">INICIO</a>
-            </li>
-            <li>
-                <a href="./formulario.html">FORMULARIO</a>
-            </li>
-            <li >
-              <a href="../index.html">INICIO</a>
-            </li>
+          <li>
+            <a href="">INICIO</a>
+          </li>
+          <li>
+            <a href="">INICIO</a>
+          </li>
+          <li>
+            <a href="">INICIO</a>
+          </li>
+          <li>
+            <a href="./formulario.html">FORMULARIO</a>
+          </li>
+          <li>
+            <a href="../index.html">INICIO</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-        <h1>Formulario</h1>
-        <form action="formulaio.js" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
-            <br>
-            <label for="edad" id="labeledad">Edad:</label>
-            <input type="number" name="edad" id="edad" placeholder="25" min="0" max="100">
-            <label for="nacimiento">Fecha de Nacimiento:</label>
-            <input type="date" name="nacimiento" id="nacimiento">
-            <br>
-            <label for="password">password</label>
-            <input type="password" name="password" id="password" minlength="5" maxlength="8">
-            <br>
-            <label for="imagen">Foto de perfil</label>
-            <input type="file" name="imagen" id="imagen">
-        </form>
-        <h2>
-            Elemento el bloque
-        </h2>
-        
-        <h2>
-            Elemento el bloque
-        </h2>
-        
+      <h1 class="roboto">Formulario</h1>
+      <form action="formulaio.js" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" />
+
+        <br />
+
+        <label for="edad" id="labeledad">Edad: </label>
+        <input type="number" name="edad" id="edad" placeholder="25" min="0" max="100" />
+
+        <label for="nacimiento">Fecha de Nacimiento: </label>
+        <input type="date" name="nacimiento" id="nacimiento" />
+
+        <br />
+
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" minlength="5" maxlength="8" />
+
+        <br />
+
+        <label for="mes">Mes: </label>
+        <input type="month" name="mes" id="mes" required />
+
+        <br />
+
+        <label for="semana">Semana: </label>
+        <input type="week" name="semana" id="semana" />
+
+        <br />
+
+        <label for="telefono">Telefono: </label>
+        <input type="tel" name="telefono" id="telefono" />
+
+        <br />
+
+        <label for="imagen">Foto de perfil: </label>
+        <input type="file" name="imagen" id="imagen" />
+
+        <br />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <label for="provincia">Provincia: </label>
+        <select name="provincia" id="provincia">
+          <option value="">Seleccione una opcion</option>
+          <option value="Chaco">Chaco</option>
+          <option value="Cordoba">Cordoba</option>
+          <option value="Corrientes">Corrientes</option>
+          <option value="Santa Fe">Santa Fe</option>
+        </select>
+
+        <div class="botones">
+          <button type="submit">Enviar Datos</button>
+          <button type="reset">Borrar Datos</button>
+        </div>
+      </form>
+      <h2>Elemento el bloque</h2>
+
+      <h2>Elemento el bloque</h2>
     </main>
-</body>
+  </body>
 </html>
